@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2">
+        <thead>
+            <th>Header column 1</th>
+            <th>Header column 2</th>
+            <th>Header column 3</th>
+            <th>Header column 4</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 2 - Item 1</td>
+                <td>Row 2 - Item 2</td>
+                <td rowspan="2" align="top"><b>Row 2: Nested Table 1</b>
+                    <br>
+                    <br>
+                    <table border="2">
+                        <tr>
+                            <td><b>Row 1 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td><b>Row 2 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td><b>Row 3 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 2 - Item 4 <br>A second line</td>
+            </tr>
+            <tr>
+                <td align="top"><b>Row 3: Nested Table 2</b>
+                    <br>
+                    <br>
+                    <table border="2">
+                        <tr>
+                            <td><b>Row 1 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td><b>Row 2 Header</b></td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 3 - Item 2</td>
+                <td rowspan="2">Row 3 - Item 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Row 5 - Last row of outer table</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
